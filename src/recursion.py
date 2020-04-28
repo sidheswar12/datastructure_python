@@ -4,8 +4,9 @@ def countdown(x):
     if x==0:
         return
     else:
-        print("x:", x)
+        print("Print value of x and execute countdown:", x)
         countdown(x-1)
+        print("Pop element by element from stack after countdown() completion")
 
 # Factorial with recusion 
 def factorial(n):
