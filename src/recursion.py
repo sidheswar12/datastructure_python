@@ -11,9 +11,7 @@ def countdown(x):
 # Factorial with recusion 
 def factorial(n):
     if n == 0:
-        return 1  
-    if n == 1:                
-        return n
+        return 1
     else:           
         return n*factorial(n-1)
 
@@ -24,13 +22,25 @@ def fibonacci(n):
     else:
         return(fibonacci(n-1) + fibonacci(n-2))  
 
+def power(num, pwr):
+    if pwr == 0:
+        return 1
+    else:
+        return num * power(num, pwr-1)
+
+
 
 countdown(5)
-fact = factorial(5)
-print("Factorial: ",fact)
 
 n = 10
 print("Fibonacce Series: ", n)
 for i in range(n):
     fib = fibonacci(i)
     print(fib)
+
+print("{} to the power of {} is {}".format(5, 3, power(5, 3)))
+print("{} to the power of {} is {}".format(1, 3, power(1, 5)))
+
+
+print("{}! is {}: ".format(5, factorial(5)))
+print("{}! is {}: ".format(0, factorial(0)))
