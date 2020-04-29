@@ -7,5 +7,9 @@ def gcd(a, b):
 
     return a
 
-print(gcd(60, 96))
-print(gcd(20, 8))
+def main():
+    print(gcd(60, 96))
+    print(gcd(20, 8))
+
+if __name__ == "__main__":
+    main()

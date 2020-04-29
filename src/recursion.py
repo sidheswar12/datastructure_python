@@ -30,17 +30,21 @@ def power(num, pwr):
 
 
 
-countdown(5)
+def main():
+    countdown(5)
 
-n = 10
-print("Fibonacce Series: ", n)
-for i in range(n):
-    fib = fibonacci(i)
-    print(fib)
+    n = 10
+    print("Fibonacce Series: ", n)
+    for i in range(n):
+        fib = fibonacci(i)
+        print(fib)
 
-print("{} to the power of {} is {}".format(5, 3, power(5, 3)))
-print("{} to the power of {} is {}".format(1, 3, power(1, 5)))
+    print("{} to the power of {} is {}".format(5, 3, power(5, 3)))
+    print("{} to the power of {} is {}".format(1, 3, power(1, 5)))
 
 
-print("{}! is {}: ".format(5, factorial(5)))
-print("{}! is {}: ".format(0, factorial(0)))
+    print("{}! is {}: ".format(5, factorial(5)))
+    print("{}! is {}: ".format(0, factorial(0)))
+
+if __name__ == "__main__":
+    main()

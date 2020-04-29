@@ -20,17 +20,21 @@ def lenearsearch(arr, elm):
     return -1
 
 
-arr = [1,5,6,8,9,10,20,22,25]
-res = binarysearch(arr, 0, len(arr) - 1, 10)
-if res !=-1:
-    print("{} is present in index {}".format(10, res))
-else:
-    print("{} is not present in list".format(10))
+def main():
+    arr = [1,5,6,8,9,10,20,22,25]
+    res = binarysearch(arr, 0, len(arr) - 1, 10)
+    if res !=-1:
+        print("{} is present in index {}".format(10, res))
+    else:
+        print("{} is not present in list".format(10))
 
 
-arr1 = [20, 21, 4, 5, 2, 6, 8, 1, 7, 6, 8, 9, 10, 20, 22, 25]
-rs = lenearsearch(arr1, 5)
-if rs !=-1:
-    print("{} is present in index {}".format(5, rs))
-else:
-    print("{} is not present in list".format(5))
+    arr1 = [20, 21, 4, 5, 2, 6, 8, 1, 7, 6, 8, 9, 10, 20, 22, 25]
+    rs = lenearsearch(arr1, 5)
+    if rs !=-1:
+        print("{} is present in index {}".format(5, rs))
+    else:
+        print("{} is not present in list".format(5))
+
+if __name__ == "__main__":
+    main()
